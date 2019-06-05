@@ -1,5 +1,5 @@
 ### Download Desktop
-  - [ ] [User can download latest (Mac & Windows) Desktop](https://desktop.github.com/) 
+  - [ ] [User can download latest (Mac & Windows) Desktop](https://desktop.github.com/)
     - [ ] [Mac](https://central.github.com/deployments/desktop/desktop/latest/darwin)
       - [ ] Homebrew package manager: `brew cask install github-desktop`
     - [ ] [Windows](https://central.github.com/deployments/desktop/desktop/latest/win32)
@@ -19,7 +19,7 @@
         - [ ] User can reissue auth code with `Resend SMS` link
 	- [ ] Sign in successful with active 2FA code, user goes to Configure Git page
 	  - [ ] User sees Repository landing page if sign-in successful
-	  - [ ] Error message if code is wrong or inactive 
+	  - [ ] Error message if code is wrong or inactive
       - [ ] Error message if incorrect username/email or password
     - [ ] Forgot link (`/password_reset`)
     - [ ] `Cancel` returns to initial Welcome Flow page
@@ -44,15 +44,15 @@
     - [ ] Checked by default; user can uncheck. (Should not be checked by default if user on free plan only.)
       - [ ] Clicking `Finish`, results in user being signed-in successfully
     - [ ] `Cancel` returns to initial Configure Git page
-    
+
 ### Onboarding
   - [ ] Onboarding shown if user is new to Desktop and has no repositories in the application
     - [ ] If user logged in during sign-up process with repository lists for GitHub.com and/or Enterprise
     - [ ] Always show three suggested steps: Clone repository, Add existing repository, Add new repository
       - [ ] Adding a repository will automically exit Onboarding
         - [ ] User can revert to Onboarding if all respositories are removed
-      
-### Repositories landing page; default no repositories 
+
+### Repositories landing page; default no repositories
   - [ ] Create New Repository (Mac: `⌘N`; Windows: `Ctrl+N`)
     - [ ] Modal opens with name, path (choose option), readme (unchecked), git ignore, license. Name and path mandatory.
       - [ ] If `Add this repository` warning message appears, clicking it adds to Repo list
@@ -60,7 +60,7 @@
       - [ ] If repository contains URL-hostile characters, show error message
     - [ ] `Create Repository` button adds new repo, which is added to Repo list
     - [ ] `Cancel` button does not save any changes made; modal closed
-    - [ ] User cannot create a new repo inside a locked local directory 
+    - [ ] User cannot create a new repo inside a locked local directory
   - [ ] Clone a Repository (Mac: `⇧⌘O`; Windows: `Ctrl+Shift+O`)
     - [ ] Enter valid URL or `username/repo/gist`, else error message
       - [ ] If authentication error for Github.com, modal with username/password surfaced; `Cancel` or `Save and Retry` buttons
@@ -95,10 +95,10 @@
       - [ ] User must be signed-in to publish, else `Sign In` button present on tab
     - [ ] Modal fields are Name, Description (optional), `Keep this code private` checkbox, Organization list (alpha order, tab-specific, if orgs exist), `Cancel` button, `Publish Repository` button
       - [ ] Clicking `Publish Repository` button pushes repo to GitHub.com or Enterprise; `Cancel` button closes modal
-        - [ ] Repository is present on GitHub.com or Enterprise if published 
+        - [ ] Repository is present on GitHub.com or Enterprise if published
 	- [ ] 'Visibility can't be private error' shown, if user's plan is not sufficient
 	- [ ] A `.gitattributes` file is added to the repository as part of the initial commit
-	- [ ] If repo is forked and upstream remote does not match, then modal is surfaced with Ignore/Update button 
+	- [ ] If repo is forked and upstream remote does not match, then modal is surfaced with Ignore/Update button
 
 ### Application
   - [ ] Minimize, Maximize, Close buttons work in top nav
@@ -122,7 +122,7 @@
       - [ ] If update available, download banner is present in main window with `restart` and `what’s new` links
       - [ ] If checking for update or download latest update in progress, the `Check for updates` button is disabled
       - [ ] Restarting the app automatically checks for updates
-    - [ ] `Close` button closes modal 
+    - [ ] `Close` button closes modal
   - [ ] Preferences/Options (Mac: `⌘,` Windows: `Ctrl+,`)
     - [ ] Accounts
       - [ ] GitHub.com name, handle, avatar, `sign out` button, if user signed in
@@ -135,7 +135,7 @@
       - [ ] `Cancel` button does not save any changes made; modal closed
     - [ ] Appearance
       - [ ] Light theme is default
-      - [ ] Dark theme is optional 
+      - [ ] Dark theme is optional
       - [ ] For Mac, users can opt to match system preference theme with checkbox
     - [ ] Advanced
       - [ ] External Editor options shown in dropdown; else show "Install Atom?" link
@@ -199,7 +199,7 @@
   - [ ] Show in Finder/Explorer (Mac: `⇧⌘F`; Windows: `Ctrl+Shift+F`)
     - [ ] Local repository is opened
   - [ ] Open in [insert editor] (Mac: `⇧⌘A`; Windows: `Ctrl+Shift+A`); see External Editor option in preferences
-    - [ ] Secondary modal appears if no Editors set; option to Download Atom 
+    - [ ] Secondary modal appears if no Editors set; option to Download Atom
   - [ ] Repository settings...
     - [ ] Remote path can be edited for existing repository; origin already set. Cannot be empty string, else error message.
       - [ ] `Saved` button saves last entry
@@ -237,7 +237,7 @@
     - [ ] Merge hint shows status and branches to be merged
     - [ ] `Merge` button only activated if something to merge (includes awaiting conflicts)
       - [ ] If merged, success banner is shown temporarily; user can `X` to remove
-      - [ ] If conflicts, conflict modal shows quantity of files, ability to open in [editor], open in command line, `Abort` button, while `Commit merge` button is deactivated until files are resolved; Changes tab shows all files 
+      - [ ] If conflicts, conflict modal shows quantity of files, ability to open in [editor], open in command line, `Abort` button, while `Commit merge` button is deactivated until files are resolved; Changes tab shows all files
         - [ ] If conflict resolved, files marked green, and user can click `Commit merge` button
 	    - [ ] If merged, success banner is shown temporarily; user can `X` to remove
 	    - [ ] Binary files must be resolved in command line before committing merge
@@ -253,7 +253,7 @@
 	    - [ ] If rebased, success banner is shown temporarily; user can `X` to remove
         - [ ] Aborting partially resolved rebase surfaces "Are you sure?" dialogue; `Cancel` or `Abort merge` buttons
   - [ ] Compare on GitHub (Mac: `⇧⌘C`; Windows: `Ctrl+Shift+C`) (if repository already published on `github.com`)
-  - [ ] Create Pull Request (Mac: `⌘R`; Windows: `Ctrl+R`) opens Pull Request on `github.com` 
+  - [ ] Create Pull Request (Mac: `⌘R`; Windows: `Ctrl+R`) opens Pull Request on `github.com`
     - [ ] If branch unpublished, dialogue asks to publish the branch
     - [ ] `Push Local Changes` modal surfaces with option to `Create Without Pushing` and `Push Commits`;(trigger: `Create Pull Request` after commit on branch before pushing)
 
@@ -262,14 +262,14 @@
 
 ### Help top-level menu
   - [ ] `Report Issue...` opens issue filing in Desktop repository on `github.com`
-  - [ ] `Contact GitHub Support...` opens `https://github.com/contact` page with user and build prepopulated
+  - [ ] `Contact GitHub Support...` opens `https://github.com/contact` page with user and build pre-populated
   - [ ] `Show User Guides` opens Desktop help page on `github.com`
   - [ ] `Show Keyboard Shortcuts` opens `https://help.github.com/en/desktop/getting-started-with-github-desktop/keyboard-shortcuts-in-github-desktop`
   - [ ] `Show Logs in Finder/Explorer` opens Finder/Explorer logs in local directory
     - [ ] Mac: `ls ~/Library/Application\ Support/GitHub\ Desktop/Logs/*.log`
     - [ ] Windows: `%LOCALAPPDATA%\\Desktop\\*.desktop.production.log`
   - [ ] About GitHub Desktop (Windows only)
-  
+
 ### Next Steps
  - [ ] Up to four suggested steps are shown at any given time, contingent on the state of the repository and/or branch
    - [ ] First step is not always showm, and it can be `View Stash`, `Pull Origin`, `Pull Origin`, `Create Pull Request`, `Publish Repository`
@@ -335,7 +335,7 @@
         - [ ] Merge conflict results in dialog shown directing user to commit view
     - [ ] Merge prompt shown above filter if comparing two branches and commits are behind default branch
       - [ ] `View commits` shows commits in Changes list, `Merge... opens Merge in Current Branch modal`, or `X` to close
-	
+
 ### Diffs section (History tab)		
   - [ ] All commits have avatar, selectable SHA, # of files changed, commit message, commit description (optional)
     - [ ] Long commit descriptions can be toggled with expand/collapse icon
@@ -348,7 +348,7 @@
       - [ ] Single pic file with the `->` sign has multiple view options: 2-up (default); Swipe; Onion Skin; and Difference
   - [ ] Panes can be resized horizontally, and contents resize to take the full width
   - [ ] Diffs cannot be over 3MB
-  - [ ] Diffs cannot be longer than 500,000 characters 
+  - [ ] Diffs cannot be longer than 500,000 characters
 
 ### Commit section (Changes tab)
   - [ ] Commit created if user clicks `Commit to [branch]` button with commit message and at least one checked file
@@ -364,7 +364,7 @@
   - [ ] User can publish a new repository with no commits (aka unborn repository/branch)
   - [ ] User can make new branch the default branch, by making the intial commit on the new branch
   - [ ] User can select individual file(s) -- and individial lines of a file(s) -- to commit at a time
-  
+
 ### Co-authoring (Changes tab)
   - [ ] clicking co-author icon toggles co-author field; or right-click within commit area
     - [ ] Hovering over the icon reveals add/remove 'action' text
@@ -376,7 +376,7 @@
       - [ ] You cannot tag a user more than once via the autocomplete; manually you can
       - [ ] Typing a GitHub name not part of the initial autocomplete will initiate a search
         - [ ] Found names are tagged; all others are turned red
-        - [ ] Navigating away from the Changes tab will clear red tags 
+        - [ ] Navigating away from the Changes tab will clear red tags
      - [ ] Toggling the co-author icon clears the field
   - [ ] All co-authors show up in History and diff view
     - [ ] Commits with `Co-Authored-By: Name <username@github.com>`in the decription field reveal avatar of user    
@@ -416,14 +416,14 @@
     - [ ] Push/Pull works with public/private/Enterprise repos
     - [ ] Tooltip shows status upon hover, if progress to display
   - [ ] When a branch is local-only make sure that the `Fetch` button changes to `Publish` and it publishes
-  
+
 ### Publishing only
   - [ ] Unpublished repository, unborn HEAD - `Publish button` enabled (user can publish repository)
   - [ ] Unpublished repository, valid branch - `Publish button` enabled (user can publish repository and branch)
   - [ ] Published repository, unborn HEAD - `Publish button` disabled (no branch to push)
   - [ ] Published repository, branch without tracking - `Publish button` enabled (user can publish branch)
   - [ ] Published repository, network action - `Publish button` disabled (don't interfere with existing action)
-  
+
 ### Github.com
   - [ ] If Desktop linked to .com (/settings/applications), the Desktop icon should show on File Revisions tab for all Pull Requests
     - [ ] Clicking the "computer icon" opens from a Pull Request page opens the branch on Desktop
@@ -435,7 +435,7 @@
  - [ ] Pull request list shown as tab on Branch list; quality shown in tab
    - [ ] Only open Pull Requests are reflected; closed Pull Requests are not shown in the list
  - [ ] Pull Request toolbar status is surfaced with yellow/green/red icon, or no icon if no status
- - [ ] If no pull requests, then no badge shown, and Pull Request tab shows `0` 
+ - [ ] If no pull requests, then no badge shown, and Pull Request tab shows `0`
    - [ ] User shown current branch in text area, and given option to create a new branch or create new pull request
  - [ ] Pull request for the current branch selected by default, with pull-request-number badge in header
    - [ ] Pull request list can be filtered; `esc` key clears filter; arrow keys can scroll list
@@ -443,6 +443,6 @@
      - [ ] Status checks run frequently in background, especially if yellow
      - [ ] If user hovers over CI status icons, tooltips show individual/group status details
  - [ ] PR status can be updated independently of respective PR
- 
+
 ### Security
  - [ ] `Untrusted server` warning surfaced if GitHub cannot verify the identity of `api.github.com`; user can `Cancel` or `Continue`
